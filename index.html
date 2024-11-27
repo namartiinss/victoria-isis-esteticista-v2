@@ -14,21 +14,19 @@
         <div class="container">
             <div class="content">
                 <div class="navbar-flex">
-                    <ul class="slider-menu">
-                        <li><a href="#" role="button">Página Inicial</a></li>
-                        <li><a href="#" role="button">Nossos Serviços</a></li>
-                    </ul>
                     <ul>
-                        <li><img class="size-logo" src="./assets/victoria-isis-esteticista-horizontal.png"
-                                alt="Logotipo da Clínica de Estética Victoria Isis"></li>
-                    </ul>
-                    <ul class="slider-menu">
-                        <li><a href="#" role="button">Sobre Mim</a></li>
-                        <li><a href="#" role="button">Perguntas Frequentes</a></li>
+                        <div><a href="#" role="button" class="slider-menu">Página Inicial</a></div>
+                        <div><a href="#" role="button" class="slider-menu">Nossos Serviços</a></div>
+                        <div>
+                            <img class="size-logo" src="./assets/logotipo-principal.png"
+                                alt="Logotipo da Clínica de Estética Victoria Isis">
+                        </div>
+                        <div><a href="#" role="button" class="slider-menu">Sobre Mim</a></div>
+                        <div><a href="#" role="button" class="slider-menu">Perguntas Frequentes</a></div>
                     </ul>
                 </div>
                 <div class="contact-us">
-                    <img src="./assets/icon-phone.svg" alt="Icone de telefone">
+                    <a href="#"><img src="./assets/icon-phone.svg" alt="Icone de telefone"></a>
                 </div>
             </div>
         </div>
@@ -42,84 +40,180 @@
                     <p> Com técnicas avançadas e um atendimento dedicado proporcionamos bem-estar e resultados visíveis
                         desde a primeira sessão.
                     </p>
-                    <div class="btn-header">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Agende seu horário</a>
-                    </div>
+                    <button class="btn-header">
+                        Agende seu horário
+                    </button>
                 </div>
                 <div class="content-right"><img class="img-victoria"
-                        src="./assets/image-victoria-isis-folhas-sombreadas.png"
+                        src="./assets/image-victoria-isis-folhas-sombreadas.jpg"
                         alt="Imagem da Esteticista Victoria Isis com um ramo de folhas atrás"></div>
             </div>
         </div>
     </header>
     <section class="container">
-        <div class="content-slider">
-            <h1>
-                Nossos Serviços
-            </h1>
-            <div class="slider">
-                <div class="bg-img-slider">
-                    <img src="./assets/bg-img-slider.jpg" alt="">
+        <div class="content-carroussel">
+            <div class="title-line">
+                <h1>
+                    Nossos Serviços
+                </h1>
+                <div class="line">
+                    <img src="./assets/line.svg" alt="">
                 </div>
-                <div class="description">
-                    <div class="menu">
-                        <a href="#" class="btn-menu">Aparelhos</a>
-                        <a href="#" class="btn-menu">Facial</a>
-                        <a href="#" class="btn-menu">Massagens</a>
+            </div>
+            <div class="container-carrossel">
+                <div class="tab-menu">
+                    <button class="menu">Aparelhos</button>
+                    <button class="menu">Facial</button>
+                    <button class="menu">Massagens</button>
+                </div>
+                <div class="cards">
+                    <!-- ======= Drenagem ======== -->
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
+                        </div>
+                        <div class="description">
+                            <h5>
+                                Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços
+                            </h5>
+                        </div>
                     </div>
-                    <ul>
-                        <li class="service-item"><img src="./assets/arrow.svg" alt="arrow left icon">Auriculoterapia</li>
-                        <li class="service-item"><img src="./assets/arrow.svg" alt="arrow left icon">Endermoterapia</li>
-                        <li class="service-item"><img src="./assets/arrow.svg" alt="arrow left icon">Manta Térmica</li>
-                        <li class="service-item"><img src="./assets/arrow.svg" alt="arrow left icon">Ventosaterapia</li>
-                        <li class="service-item"><img src="./assets/arrow.svg" alt="arrow left icon">Ultrassom</li>
-                    </ul>
-                    <a class="btn-slide" href="#">Mais Detalhes</a>
+                    <!-- ======= Massagem Express ======== -->
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/massagem-express.jpg" alt="Imagem de massagem nas costas">
+                        </div>
+                        <div class="description">
+                            <h5>
+                                Alívio • Melhora da circulação • Relaxamento • Redução do estresse
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- ======= Massagem Relaxante ======== -->
+                    <div class="card">
+                        <div class="img">
+                            <img src="./assets/massagem-relaxante.jpg" alt="Imagem de massagem nos ombros">
+                        </div>
+                        <div class="description">
+                            <h5>
+                                Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- ======= Massagem Modeladora ======== -->
+                    <!-- <div class="card">
+                        <div class="img">
+                            <img src="./assets/modeladora.jpg" alt="Imagem de massagem nos ombros">
+                        </div>
+                        <div class="description">
+                            <h5>
+                                Aumento da elasticidade • Diminuição da celulite • Melhora da circulação • Redução de
+                                Gordura
+                            </h5>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="buttons-left-right">
+                    <button class="left">
+                        <img src="./assets/button-left.svg" alt="">
+                    </button>
+                    <button class="right">
+                        <img src="./assets/button-right.svg" alt="">
+                    </button>
+                </div>
+                <div class="container-morePacks">
+                    <a href="#" role="button" class="btn-morePacks">Quero saber mais sobre os serviços</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-about-me">
-        <div class="bg-img-about-me">
-            <img src="./assets/about-me.jpg"
-                alt="Imagem da esteticista Victoria Isis citando as suas formações em Estética e Biomedicina">
-        </div>
-        <div class="text-about-me">
-            <p>
-                Oferecemos tratamentos estéticos de alta qualidade, focados no bem-estar e na autoestima de
-                nossas clientes, com uma abordagem personalizada, inovação e um ambiente acolhedor, sempre
-                respeitando a individualidade de cada pessoa.
-                <br></br> 
-                A clínica combina um ambiente moderno com equipamentos de última geração e uma base fiel de
-                clientes, garantindo resultados de excelência.
-            </p>
-        </div>
-    </section>
-    <!-- <footer class="footer">
-        <div class="text-title">
-            <h1 class="title-footer">Descubra Sua Melhor Versão Aqui!</h1>
-        </div>
-        <div class="contact-us">
-            <div class="logo-socials">
-                <div class="logo">
-                    <img src="./assets/victoria-isis-esteticista-horizontal.png" alt="">
+    <section>
+        <div class="container">
+            <div class="title-line">
+                <h1>
+                    Quer conhecer <br> nossos pacotes?
+                </h1>
+                <div class="line">
+                    <img src="./assets/line.svg" alt="">
                 </div>
-                <ul class="icons">
-                    <li class="icons-li"><a href="#" role="button"><img src="./assets/whatsapp.svg"
-                                alt="Icone da rede social whatsapp"></a></li>
-                    <li class="icons-li"><a href="#" role="button"><img src="./assets/instagram.svg"
-                                alt="Icone da rede social Instagram"></a></li>
-                    <li class="icons-li"><a href="#" role="button"><img src="./assets/mail.svg"
-                                alt="Icone da rede de comunicação E-mail"></a></li>
-                </ul>
-                <a class="btn-contact-us">Fale Conosco</a>
+            </div>
+            <div class="box">
+                <!-- Drenagem -->
+                <div class="box-promotional">
+                    <h2>4x Drenagem</h2>
+                    <h4>Desinche, relaxe e cuide de sua saúde com sessões que promovem bem-estar e realçam sua beleza.
+                    </h4>
+                    <button class="btn-header">
+                        Ver valores
+                    </button>
+                </div>
+                <!-- Limpeza Facial -->
+                <div class="box-promotional-focus">
+                    <h2>4x Limpeza Facial</h2>
+                    <h4>Renove sua pele, removendo impurezas e promovendo hidratação e luminosidade para um rosto
+                        saudável e radiante.</h4>
+                    <button class="btn-header">
+                        Ver valores
+                    </button>
+                </div>
+                <!-- Endermo -->
+                <div class="box-promotional">
+                    <h2>4x Endermo</h2>
+                    <h4>Modelagem corporal, redução de celulite e estímulo à circulação para realçar sua beleza.</h4>
+                    <button class="btn-header">
+                        Ver valores
+                    </button>
+                </div>
             </div>
         </div>
-        <ul class="pages">
-            <li class="pages-li"><a href="#" role="button">Página Inicial</a></li>
-            <li class="pages-li"><a href="#" role="button">Nossos Serviços</a></li>
-            <li class="pages-li"><a href="#" role="button">Sobre Mim</a></li>
-            <li class="pages-li"><a href="#" role="button">Fale Conosco</a></li>
-        </ul>
-    </footer> -->
+    </section>
+    <section>
+        <div class="container">
+            <div class="about">
+                <div class="content-about">
+                    <div class="head-line">
+                        <div class="line">
+                            <img src="./assets/line-white.svg" alt="">
+                        </div>
+                        <h1 class="head-line-txt">
+                            Sobre Mim
+                        </h1>
+                    </div>
+                    <div class="about-me">
+                        <div class="img-about">
+                            <img src="./assets/victoria-sentada-ramo-de-flores.png" alt="">
+                        </div>
+                        <div class="text-about">
+                            <p class="text-about-me">Prazer, eu sou</p>
+                            <h3>Victoria Isis</h3>
+                            <p class="text-about-me">
+
+                                Sou formada em Estética e Biomedicina, unindo ciência e beleza para oferecer tratamentos
+                                estéticos de alta qualidade. Minha missão é valorizar a autoestima e o bem-estar de cada
+                                cliente.
+                                <br></br>
+                                Na clínica, contamos com atendimento personalizado, um ambiente moderno e equipamentos
+                                de última geração, garantindo resultados excepcionais. Tenho orgulho da base fiel de
+                                clientes, conquistada pelo cuidado e respeito à individualidade de cada pessoa. Sua
+                                beleza e confiança são nossa prioridade!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-feedback">
+            <div class="title-line">
+                <h1>
+                    Feedbacks
+                </h1>
+                <div class="line">
+                    <img src="./assets/line.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
