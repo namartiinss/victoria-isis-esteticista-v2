@@ -10,13 +10,14 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 40px 0;
+
 }
 
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .navbar-flex {
@@ -64,6 +65,7 @@ ul {
 .header-flex {
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 
 p {
@@ -83,6 +85,7 @@ p {
     font-size: 20px;
     border: none;
     cursor: pointer;
+    margin-top: 24px;
 }
 
 .btn-header:hover {
@@ -94,6 +97,7 @@ p {
 .size-img {
     width: 520px;
     height: 102px;
+    margin-bottom: 24px;
 }
 
 /* =========== Carrossel ============= */
@@ -224,7 +228,11 @@ button {
     transition: .3s linear;
 }
 
-/* =========== Sessão Pacotes */
+/* =========== Sessão Pacotes ============= */
+
+.content-box {
+    margin: 100px 0;
+}
 
 .box {
     display: flex;
@@ -253,7 +261,6 @@ button {
     background-color: #F3F5E7;
     gap: 20px;
     padding: 40px;
-    /* border: 1px solid #5F6B55; */
     border-radius: 20px;
     text-align: center;
     width: 400px;
@@ -289,6 +296,10 @@ h4 {
     gap: 0px;
     justify-content: space-between;
     align-items: center;
+}
+
+.about {
+    margin: 60px 0;
 }
 
 .head-line {
@@ -327,4 +338,102 @@ h3 {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+}
+
+/* ======== Feedbacks ========== */
+
+.content-feedback {
+    margin: 140px 0;
+}
+
+.feedbacks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards-feedbacks {
+    width: 388px;
+    height: 180px;
+    padding: 40px 24px;
+    border: 1px solid #5F6B55;
+    border-radius: 16px 40px;
+    text-align: center;
+}
+
+.p-small, p {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.cards-feedbacks-focus {
+    width: 480px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: #F3F5E7;
+}
+
+.p-large, p {
+    text-align: left;
+    font-size: 20px;
+    color: #5F6B55;
+}
+
+.data-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* =============== Footer ================ */
+
+footer {
+    padding: 60px;
+    background-color: #EEF1E0;
+    border-radius: 60px 60px 0px 0;
+}
+
+.footer-title p{
+    font-family: Tenor sans;
+    font-size: 52px;
+    margin-bottom: 40px;
+}
+
+.content-right-footer, .linkPages  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+}
+
+.content-left-footer {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: poppins;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5F6B55;
+}
+
+a:hover {
+    color: #F3F5E7;
+}
+
+.margin-none {
+    margin: 0;
 }
