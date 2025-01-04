@@ -91,3 +91,13 @@ tabMenuContainer.addEventListener("click", (event) => {
     nextPrevModal(clickedButton.innerText.trim().toLowerCase())
   }
 });
+
+
+const menuMobile = document.querySelector(".desktopHidden")
+
+
+document.querySelectorAll(".menuActive").forEach((el) => {
+  el.addEventListener("click", () => {
+    menuMobile.classList.toggle("active")
+  })
+})

@@ -1,458 +1,516 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victoria Isis</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.svg">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-    <style>
- .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    </style>
-</head>
-
-<body>
-    <nav class="hidden">
-        <div class="container">
-            <div class="content">
-                <div class="navbar-flex">
-                    <ul>
-                        <div><a href="#" role="button" class="slider-menu">Página Inicial</a></div>
-                        <div><a href="#" role="button" class="slider-menu">Nossos Serviços</a></div>
-                        <div>
-                            <img class="size-logo" src="./assets/logotipo-principal.png"
-                                alt="Logotipo da Clínica de Estética Victoria Isis">
-                        </div>
-                        <div><a href="#" role="button" class="slider-menu">Sobre Mim</a></div>
-                        <div><a href="#" role="button" class="slider-menu">Perguntas Frequentes</a></div>
-                    </ul>
-                </div>
-                <div class="contact-us">
-                    <a href="#"><img src="./assets/icon-phone.svg" alt="Icone de telefone"></a>
-                </div>
-            </div>
+  <body>
+    <nav class="mobileHiden">
+      <div class="container">
+        <div class="content">
+          <div class="navbar-flex">
+            <ul>
+              <div>
+                <a href="#" role="button" class="slider-menu">Página Inicial</a>
+              </div>
+              <div>
+                <a href="#" role="button" class="slider-menu"
+                  >Nossos Serviços</a
+                >
+              </div>
+              <div>
+                <img
+                  class="size-logo"
+                  src="./assets/logotipo-principal.png"
+                  alt="Logotipo da Clínica de Estética Victoria Isis"
+                />
+              </div>
+              <div>
+                <a href="#" role="button" class="slider-menu">Sobre Mim</a>
+              </div>
+              <div>
+                <a href="#" role="button" class="slider-menu"
+                  >Perguntas Frequentes</a
+                >
+              </div>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <a href="#"
+              ><img src="./assets/icon-phone.svg" alt="Icone de telefone"
+            /></a>
+          </div>
         </div>
-        </div>
+      </div>
     </nav>
+    <div class="openMenu menuActive">
+      <img src="./assets/hamburger.svg" alt="">
+    </div>
+    <nav class="desktopHidden">
+      <div class="close menuActive">
+        <img src="./assets/close.svg" alt="">
+      </div>
+      <ul>
+        <li><a href="">Página Inicial</a></li>
+        <li><a href="">Nossos Serviços</a></li>
+        <li><a href="">Sobre Mim</a></li>
+        <li><a href="">Perguntas Frequentes</a></li>
+
+        <button><span>Entre em contato</span> <img src="./assets/icon-phone.svg" alt="Icone de telefone"></button>
+      </ul>
+    </nav>
+
     <header>
-        <div class="container">
-            <div class="header-flex">
-                <div class="content-left">
-                    <img class="size-img" src="./assets/logo-court.png" alt="Logotipo Maior da Clínica Victoria Isis">
-                    <p> Com técnicas avançadas e um atendimento dedicado proporcionamos bem-estar e resultados visíveis
-                        desde a primeira sessão.
-                    </p>
-                    <button class="btn-header">
-                        Agende seu horário
-                    </button>
-                </div>
-                <div class="content-right"><img class="img-victoria"
-                        src="./assets/image-victoria-isis-folhas-sombreadas.jpg"
-                        alt="Imagem da Esteticista Victoria Isis com um ramo de folhas atrás"></div>
-            </div>
+      <div class="container">
+        <div class="header-flex">
+          <div class="content-left">
+            <img
+              class="size-img"
+              src="./assets/logo-court.png"
+              alt="Logotipo Maior da Clínica Victoria Isis"
+            />
+            <p>
+              Com técnicas avançadas e um atendimento dedicado proporcionamos
+              bem-estar e resultados visíveis desde a primeira sessão.
+            </p>
+            <button class="btn-header">Agende seu horário</button>
+          </div>
+          <div class="content-right">
+            <img
+              class="img-victoria"
+              src="./assets/image-victoria-isis-folhas-sombreadas.jpg"
+              alt="Imagem da Esteticista Victoria Isis com um ramo de folhas atrás"
+            />
+          </div>
         </div>
+      </div>
     </header>
 
-    
     <section class="container">
-        <div class="content-carroussel">
-            <div class="title-line">
-                <h1>
-                    Nossos Serviços
-                </h1>
-                <div class="line">
-                    <img src="./assets/line.svg" alt="">
-                </div>
-            </div>
-            <div class="container-carrossel">
-                <div class="tab-menu">
-                    <button class="menu active">Aparelhos</button>
-                    <button class="menu">Facial</button>
-                    <button class="menu">Massagens</button>
-                </div>
+      <div class="content-carroussel">
+        <div class="title-line">
+          <h1>Nossos Serviços</h1>
+          <div class="line">
+            <img src="./assets/line.svg" alt="" />
+          </div>
+        </div>
+        <div class="container-carrossel">
+          <div class="tab-menu">
+            <button class="menu active">Aparelhos</button>
+            <button class="menu">Facial</button>
+            <button class="menu">Massagens</button>
+          </div>
 
-                <div class="container-carrossel">
-
-                    <!-- Swipers -->
-                    <div class="swiper-wrapper-container">
-                      <div class="swiper aparelhos">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços</h5>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços</h5>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Alívio • Eliminação de toxinas • Melhora da circulação • Redução de inchaços</h5>
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <!-- Adicione mais slides aqui -->
-                        </div>
-                        <div class="swiper-button-next hidden"></div>
-                        <div class="swiper-button-prev hidden"></div>
+          <div class="container-carrossel">
+            <!-- Swipers -->
+            <div class="swiper-wrapper-container">
+              <div class="swiper aparelhos">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
                       </div>
-                  
-                      <div class="swiper facial hidden">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 1</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 1</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 1</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 1</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Adicione mais slides aqui -->
-                        </div>
-                        <div class="swiper-button-next hidden"></div>
-                        <div class="swiper-button-prev hidden"></div>
-                      </div>
-                  
-                      <div class="swiper massagens hidden">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 2</h5>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 2</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 2</h5>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div class="swiper-slide">
-                            <div class="card">
-                              <div class="img">
-                                <img src="./assets/drenagem.jpg" alt="Imagem de drenagem linfática">
-                              </div>
-                              <div class="description">
-                                <h5>Teste 2</h5>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Adicione mais slides aqui -->
-                        </div>
-                        <div class="swiper-button-next hidden"></div>
-                        <div class="swiper-button-prev hidden"></div>
+                      <div class="description">
+                        <h5>
+                          Alívio • Eliminação de toxinas • Melhora da circulação
+                          • Redução de inchaços
+                        </h5>
                       </div>
                     </div>
-                </div>
+                  </div>
 
-                <div class="buttons-left-right">
-                    <button class="left">
-                        <img src="./assets/button-left.svg" alt="">
-                    </button>
-                    <button class="right">
-                        <img src="./assets/button-right.svg" alt="">
-                    </button>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>
+                          Alívio • Eliminação de toxinas • Melhora da circulação
+                          • Redução de inchaços
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>
+                          Alívio • Eliminação de toxinas • Melhora da circulação
+                          • Redução de inchaços
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>
+                          Alívio • Eliminação de toxinas • Melhora da circulação
+                          • Redução de inchaços
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Adicione mais slides aqui -->
                 </div>
-                <div class="container-morePacks">
-                    <a href="#" role="button" class="btn-morePacks">Quero saber mais sobre os serviços</a>
+                <div class="swiper-button-next hidden"></div>
+                <div class="swiper-button-prev hidden"></div>
+              </div>
+
+              <div class="swiper facial hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 1</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 1</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 1</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 1</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Adicione mais slides aqui -->
                 </div>
+                <div class="swiper-button-next hidden"></div>
+                <div class="swiper-button-prev hidden"></div>
+              </div>
+
+              <div class="swiper massagens hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 2</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 2</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 2</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="img">
+                        <img
+                          src="./assets/drenagem.jpg"
+                          alt="Imagem de drenagem linfática"
+                        />
+                      </div>
+                      <div class="description">
+                        <h5>Teste 2</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Adicione mais slides aqui -->
+                </div>
+                <div class="swiper-button-next hidden"></div>
+                <div class="swiper-button-prev hidden"></div>
+              </div>
             </div>
+          </div>
+
+          <div class="buttons-left-right">
+            <button class="left">
+              <img src="./assets/button-left.svg" alt="" />
+            </button>
+            <button class="right">
+              <img src="./assets/button-right.svg" alt="" />
+            </button>
+          </div>
+          <div class="container-morePacks">
+            <a href="#" role="button" class="btn-morePacks"
+              >Quero saber mais sobre os serviços</a
+            >
+          </div>
         </div>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <section class="pacotes">
-        <div class="container">
-            <div class="content-box">
-                <div class="title-line">
-                    <h1>
-                        Quer conhecer <br> nossos pacotes?
-                    </h1>
-                    <div class="line">
-                        <img src="./assets/line.svg" alt="">
-                    </div>
-                </div>
-                <div class="box">
-                    <!-- Drenagem -->
-                    <div class="box-promotional">
-                        <h2>4x Drenagem</h2>
-                        <h4>Desinche, relaxe e cuide de sua saúde com sessões que promovem bem-estar e realçam sua beleza.
-                        </h4>
-                        <button class="btn-header">
-                            Ver valores
-                        </button>
-                    </div>
-                    <!-- Limpeza Facial -->
-                    <div class="box-promotional-focus">
-                        <h2>4x Limpeza Facial</h2>
-                        <h4>Renove sua pele, removendo impurezas e promovendo hidratação e luminosidade para um rosto
-                            saudável e radiante.</h4>
-                        <button class="btn-header">
-                            Ver valores
-                        </button>
-                    </div>
-                    <!-- Endermo -->
-                    <div class="box-promotional">
-                        <h2>4x Endermo</h2>
-                        <h4>Modelagem corporal, redução de celulite e estímulo à circulação para realçar sua beleza.</h4>
-                        <button class="btn-header">
-                            Ver valores
-                        </button>
-                    </div>
+      <div class="container">
+        <div class="content-box">
+          <div class="title-line">
+            <h1>
+              Quer conhecer <br />
+              nossos pacotes?
+            </h1>
+            <div class="line">
+              <img src="./assets/line.svg" alt="" />
             </div>
+          </div>
+          <div class="box">
+            <!-- Drenagem -->
+            <div class="box-promotional">
+              <h2>4x Drenagem</h2>
+              <h4>
+                Desinche, relaxe e cuide de sua saúde com sessões que promovem
+                bem-estar e realçam sua beleza.
+              </h4>
+              <button class="btn-header">Ver valores</button>
+            </div>
+            <!-- Limpeza Facial -->
+            <div class="box-promotional-focus">
+              <h2>4x Limpeza Facial</h2>
+              <h4>
+                Renove sua pele, removendo impurezas e promovendo hidratação e
+                luminosidade para um rosto saudável e radiante.
+              </h4>
+              <button class="btn-header">Ver valores</button>
+            </div>
+            <!-- Endermo -->
+            <div class="box-promotional">
+              <h2>4x Endermo</h2>
+              <h4>
+                Modelagem corporal, redução de celulite e estímulo à circulação
+                para realçar sua beleza.
+              </h4>
+              <button class="btn-header">Ver valores</button>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
     <section>
-        <div class="container">
-            <div class="about">
-                <div class="content-about">
-                    <div class="head-line">
-                        <div class="line">
-                            <img src="./assets/line-white.svg" alt="">
-                        </div>
-                        <h1 class="head-line-txt">
-                            Sobre Mim
-                        </h1>
-                    </div>
-                    <div class="about-me">
-                        <div class="img-about">
-                            <img src="./assets/victoria-sentada-ramo-de-flores.png" alt="">
-                        </div>
-                        <div class="text-about">
-                            <p class="text-about-me">Prazer, eu sou</p>
-                            <h3>Victoria Isis</h3>
-                            <p class="text-about-me">
-                                Sou formada em Estética e Biomedicina, unindo ciência e beleza para oferecer tratamentos
-                                estéticos de alta qualidade. Minha missão é valorizar a autoestima e o bem-estar de cada
-                                cliente.
-                                <br></br>
-                                Na clínica, contamos com atendimento personalizado, um ambiente moderno e equipamentos
-                                de última geração, garantindo resultados excepcionais. Tenho orgulho da base fiel de
-                                clientes, conquistada pelo cuidado e respeito à individualidade de cada pessoa. Sua
-                                beleza e confiança são nossa prioridade!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="about">
+          <div class="content-about">
+            <header class="head-line">
+              <div class="line">
+                <img
+                  src="./assets/line-white.svg"
+                  alt="Linha decorativa branca"
+                />
+              </div>
+              <h1 class="head-line-txt">Sobre Mim</h1>
+            </header>
+            <div class="about-me">
+              <figure class="img-about">
+                <img
+                  src="./assets/victoria-sentada-ramo-de-flores.png"
+                  alt="Victoria sentada segurando um ramo de flores"
+                />
+              </figure>
+              <div class="text-about">
+                <p class="text-intro">Prazer, eu sou</p>
+                <h3>Victoria Isis</h3>
+                <p class="text-about-me">
+                  Sou formada em Estética e Biomedicina, unindo ciência e beleza
+                  para oferecer tratamentos estéticos de alta qualidade. Minha
+                  missão é valorizar a autoestima e o bem-estar de cada cliente.
+                </p>
+                <p class="text-about-me">
+                  Na clínica, contamos com atendimento personalizado, um
+                  ambiente moderno e equipamentos de última geração, garantindo
+                  resultados excepcionais. Tenho orgulho da base fiel de
+                  clientes, conquistada pelo cuidado e respeito à
+                  individualidade de cada pessoa. Sua beleza e confiança são
+                  nossa prioridade!
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+
     <section>
-        <div class="container">
-            <div class="content-feedback">
-                <div class="title-line">
-                    <h1>
-                        Feedbacks
-                    </h1>
-                    <div class="line">
-                        <img src="./assets/line.svg" alt="">
-                    </div>
-                </div>
-                <div class="feedbacks">
-                    <div class="cards-feedbacks">
-                        <div class="card-feedback">
-                            <p class="p-small">
-                                O atendimento foi incrível! Me senti muito acolhida e percebi o cuidado em entender
-                                minhas necessidades. Os resultados superaram minhas expectativas, e o ambiente da
-                                clínica é impecável. Voltarei com certeza!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cards-feedbacks-focus">
-                        <div class="data-user">
-                            <div class="img-star">
-                                <img src="./assets/star-perfil.svg" alt="">
-                            </div>
-                            <div class="name-star">
-                                <p class="p-large">Nathália Martins</p>
-                                <div class="stars">
-                                    <img src="./assets/stars-feedback.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <p class="p-large">
-                            Faço uma combinação de Drenagem, endermo e ultrassom. Em 1 mês perdi 1,7kg e minhas
-                            medidas mudaram para melhor! Sem contar o espaço aconchegante e atendimento
-                            excelente!
-                        </p>
-                    </div>
-                    <div class="cards-feedbacks">
-                        <div class="card-feedback">
-                            <p class="p-small">
-                                A dedicação e o profissionalismo da equipe são de outro nível! Adorei o atendimento
-                                personalizado e os equipamentos modernos. Saí da clínica com mais autoestima e
-                                confiança. Recomendo de olhos fechados!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="content-feedback">
+          <header class="title-line">
+            <h1>Feedbacks</h1>
+            <div class="line">
+              <img src="./assets/line.svg" alt="Linha decorativa para título" />
             </div>
+          </header>
+          <div class="feedbacks">
+            <article class="cards-feedbacks">
+              <blockquote class="card-feedback">
+                <p class="p-small">
+                  O atendimento foi incrível! Me senti muito acolhida e percebi
+                  o cuidado em entender minhas necessidades. Os resultados
+                  superaram minhas expectativas, e o ambiente da clínica é
+                  impecável. Voltarei com certeza!
+                </p>
+              </blockquote>
+            </article>
+            <article class="cards-feedbacks-focus featured-feedback">
+              <div class="data-user">
+                <figure class="img-star">
+                  <img
+                    src="./assets/star-perfil.svg"
+                    alt="Perfil do usuário Nathália Martins"
+                  />
+                </figure>
+                <div class="name-star">
+                  <p class="p-large">Nathália Martins</p>
+                  <div class="stars">
+                    <img
+                      src="./assets/stars-feedback.svg"
+                      alt="Avaliação: 5 estrelas"
+                    />
+                  </div>
+                </div>
+              </div>
+              <blockquote class="p-large">
+                Faço uma combinação de Drenagem, endermo e ultrassom. Em 1 mês
+                perdi 1,7kg e minhas medidas mudaram para melhor! Sem contar o
+                espaço aconchegante e atendimento excelente!
+              </blockquote>
+            </article>
+            <article class="cards-feedbacks">
+              <blockquote class="card-feedback">
+                <p class="p-small">
+                  A dedicação e o profissionalismo da equipe são de outro nível!
+                  Adorei o atendimento personalizado e os equipamentos modernos.
+                  Saí da clínica com mais autoestima e confiança. Recomendo de
+                  olhos fechados!
+                </p>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
+
     <footer>
-        <div class="container">
-            <div class="footer">
-                <div class="footer-title">
-                    <p class="ptitle-large">Descubra Sua Melhor Versão Aqui!</p>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-title">
+            <p class="ptitle-large">Descubra Sua Melhor Versão Aqui!</p>
+          </div>
+          <div class="linkPages">
+            <div class="links-logos">
+              <div class="logo-footer">
+                <img src="./assets/logo-footer.svg" alt="" />
+              </div>
+              <div class="content-right-footer">
+                <div class="links">
+                  <a href="#"><img src="./assets/whatsapp.svg" alt="" /></a>
+                  <a href="#"><img src="./assets/instagram.svg" alt="" /></a>
+                  <a href="#"><img src="./assets/mail.svg" alt="" /></a>
                 </div>
-                <div class="linkPages">
-                    <div class="links-logos">
-                        <div class="logo-footer">
-                            <img src="./assets/logo-footer.svg" alt="">
-                        </div>
-                        <div class="content-right-footer">
-                            <div class="links">
-                                <a href="#"><img src="./assets/whatsapp.svg" alt=""></a>
-                                <a href="#"><img src="./assets/instagram.svg" alt=""></a>
-                                <a href="#"><img src="./assets/mail.svg" alt=""></a>
-                            </div>
-                            <button class="btn-header margin-none">
-                                Fale Conosco
-                            </button>
-                        </div>
-                    </div>
-                    <div class="content-left-footer">
-                        <a href="#">Página Inicial</a>
-                        <a href="#">Nossos Serviços</a>
-                        <a href="#">Sobre Mim</a>
-                        <a href="#">Sobre Mim</a>
-                    </div>
-                </div>
+                <button class="btn-header margin-none">Fale Conosco</button>
+              </div>
             </div>
+            <div class="content-left-footer">
+              <a href="#">Página Inicial</a>
+              <a href="#">Nossos Serviços</a>
+              <a href="#">Sobre Mim</a>
+              <a href="#">Sobre Mim</a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-
-</body>
+  </body>
+</html>

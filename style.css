@@ -11,7 +11,29 @@ body {
 .hidden {
   display: none !important;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.desktopHidden {
+  display: none;
+}
 /* ================ Navbar ================== */
 
 .container {
@@ -58,8 +80,19 @@ ul {
   color: #fff;
   border-radius: 50px;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 18px;
   padding: 16px 20px;
+}
+.content {
+  gap: 20px;
+}
+.navbar-flex {
+  width: 100%;
+}
+.navbar-flex ul {
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .slider-menu:hover {
@@ -450,7 +483,24 @@ a:hover {
 .margin-none {
   margin: 0;
 }
-
+@media (max-width: 1450px) {
+  .slider-menu {
+    font-size: 16px;
+  }
+  .content {
+    gap: 20px;
+  }
+  .navbar-flex {
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar-flex ul {
+    gap: 20px;
+  }
+  .contact-us img {
+    width: 68px;
+  }
+}
 @media (max-width: 1300px) {
   h1 {
     width: 50%;
@@ -521,12 +571,79 @@ a:hover {
   .text-about-me {
     font-size: 20px;
   }
-  .footer-title p{
+  .footer-title p {
     line-height: normal;
   }
 }
 
 @media (max-width: 900px) {
+  nav.mobileHiden {
+    display: none;
+  }
+  nav.desktopHidden {
+    display: block;
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background-color: #5f6b55;
+    top: 0;
+    left: 100%;
+    transition: 0.3s;
+    z-index: 10000;
+    padding-top: 60px;
+  }
+  nav.desktopHidden.active {
+    left: 0;
+  }
+  .openMenu{
+    position: relative;
+    padding: 20px;
+    text-align: right;
+  }
+  .openMenu img{
+    width: 30px;
+  }
+  .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 20px;
+  }
+  .close img{
+    width: 30px;
+  }
+  nav.desktopHidden ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav.desktopHidden ul li {
+    width: 100%;
+    list-style: none;
+  }
+  nav.desktopHidden ul a {
+    color: #fff;
+    font-family: poppins;
+  }
+
+  nav.desktopHidden button {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    border-radius: 1000px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+  }
+
+  nav.desktopHidden button span {
+    font-size: 18px;
+  }
+  nav.desktopHidden button img {
+    width: 48px;
+  }
+
   .pacotes h1 {
     width: 100%;
   }
@@ -551,23 +668,23 @@ a:hover {
     width: 70%;
   }
 
-  .linkPages{
+  .linkPages {
     flex-direction: column-reverse;
   }
   .content-left-footer,
-  .links-logos{
+  .links-logos {
     width: 100%;
   }
-  .content-right-footer{
+  .content-right-footer {
     flex-direction: column-reverse;
   }
-  footer{
+  footer {
     padding: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .tab-menu{
+  .tab-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -626,29 +743,29 @@ a:hover {
     font-size: 16px;
     line-height: normal;
   }
-  .content-carroussel .line{
+  .content-carroussel .line {
     width: 100%;
   }
 
-  .content-carroussel .line img{
+  .content-carroussel .line img {
     width: 100%;
   }
-  .menu{
+  .menu {
     font-size: 16px;
     padding: 16px;
   }
-  .title-line h1{
+  .title-line h1 {
     width: 100%;
     font-size: 32px;
   }
-  .footer-title p{
+  .footer-title p {
     font-size: 30px;
     margin-top: 20px;
   }
-  .container-carrossel .card .img{
+  .container-carrossel .card .img {
     height: auto;
   }
-  .buttons-left-right{
+  .buttons-left-right {
     margin-top: -33px;
     position: relative;
     z-index: 100;
