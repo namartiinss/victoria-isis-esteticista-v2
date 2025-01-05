@@ -7,6 +7,7 @@
 body {
   background-color: #fff;
   margin: 0;
+  overflow-x: hidden;
 }
 .hidden {
   display: none !important;
@@ -483,6 +484,9 @@ a:hover {
 .margin-none {
   margin: 0;
 }
+.openMenu.menuActive{
+  display: none;
+}
 @media (max-width: 1450px) {
   .slider-menu {
     font-size: 16px;
@@ -525,6 +529,7 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 1100px) {
   .header-flex {
     flex-direction: column;
@@ -575,7 +580,12 @@ a:hover {
     line-height: normal;
   }
 }
-
+@media(max-width: 1060px){
+  .content-carroussel .line,
+  .content-carroussel .line img{
+    width: 100%;
+  }
+}
 @media (max-width: 900px) {
   nav.mobileHiden {
     display: none;
@@ -594,6 +604,9 @@ a:hover {
   }
   nav.desktopHidden.active {
     left: 0;
+  }
+  .openMenu.menuActive{
+    display: block;
   }
   .openMenu{
     position: relative;
@@ -766,8 +779,17 @@ a:hover {
     height: auto;
   }
   .buttons-left-right {
-    margin-top: -33px;
     position: relative;
     z-index: 100;
+  }
+}
+
+
+@media(max-width: 500px){
+  .swiper-wrapper-container .card{
+    width: auto;
+  }
+  .buttons-left-right{
+    margin-top: -33px;
   }
 }
